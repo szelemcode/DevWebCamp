@@ -1,0 +1,8 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color';
+
+.auth {
+//background-color: red;
+   @include m.contenedor-sm;
+}
