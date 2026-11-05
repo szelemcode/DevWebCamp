@@ -376,5 +376,27 @@ h3 {
 .formulario__input {
   padding: 1rem;
   border: 1px solid rgb(69.2549019608%, 78.0392156863%, 86.8235294118%);
+  border-radius: 0.5rem;
+}
+.formulario__submit {
+  background-color: #007df4;
+  padding: 1.5rem 4rem;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+.formulario__submit:hover {
+  background-color: rgb(0%, 38.7737062038%, 75.6862745098%);
+  cursor: pointer;
+}
+.formulario__submit {
+  width: auto;
+  align-self: flex-start;
 }
 /*# sourceMappingURL=app.css.map */

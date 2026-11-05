@@ -20,6 +20,12 @@
     &__input {
         padding: 1rem;
         border: 1px solid color.adjust(v.$gris-claro, $lightness: -20%);
+        border-radius: .5rem;
 
+    }
+    &__submit {
+        @include m.boton(v.$azul, v.$blanco);
+        width: auto;
+        align-self: flex-start;
     }
 }
