@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'sass:color';
+
+.acciones {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__enlace {
+        color: v.$negro;
+        font-size: 1.4rem;
+        font-weight: v.$delgada;
+        //text-decoration: none;
+        //transition-property: color;
+        //transition-duration: .3s;
+
+        &:hover {
+            color: color.adjust(v.$azul, $lightness: -20%);
+        }
+    }
+}
