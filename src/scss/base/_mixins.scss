@@ -51,7 +51,7 @@
 @mixin contenedor {
     // max-width: 120rem;
     // width: 95%;
-    width: min(95%, 120rem);
+    width: min(95%, 140rem);
     margin: 0 auto;
 }
 
@@ -71,4 +71,20 @@
     margin: 6rem 0 3rem 0 ;
     text-align: center;
 
+}
+
+@mixin textoFluido($min,$max) {
+    font-size: clamp($min, -0.8rem + 10vw, $max);
+}
+
+@mixin textoDegradado ($inicio, $final){
+    background: linear-gradient(
+        to right,
+        $inicio,
+        $final
+    );
+    background-clip: text;
+    color: transparent;
+     //-webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
 }
