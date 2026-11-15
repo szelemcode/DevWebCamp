@@ -3,9 +3,8 @@
 @use 'sass:color';
 
 .barra {
-    background-color: v.$blanco; 
+    background-color: v.$azul; 
     &__contenido {
-        background-color:v.$azul;
         @include m.contenedor;
          display: flex;
          flex-direction: column;
