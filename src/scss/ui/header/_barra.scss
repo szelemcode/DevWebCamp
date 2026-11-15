@@ -11,10 +11,12 @@
          @include m.desktop {
              flex-direction: row;
              justify-content: space-between;
+             align-items: center;
          }
     }
 
     &__logo {
         @include m.logo;
+        @include m.textoFluido(2rem, 3rem);
     }
 }

@@ -465,6 +465,7 @@ h3 {
   .barra__contenido {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 .barra__logo {
@@ -475,8 +476,33 @@ h3 {
 @media (min-width: 1024px) {
   .barra__logo {
     text-align: left;
-    margin-bottom: 0;
+    margin: 0;
   }
+}
+.barra__logo {
+  font-size: clamp(2rem, -0.8rem + 10vw, 3rem);
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .navegacion {
+    flex-direction: row;
+  }
+}
+.navegacion__enlace {
+  color: #FFFFFF;
+  font-size: 2.2rem;
+  padding: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+.navegacion__enlace:hover {
+  background-color: #FFFFFF;
+  color: #007df4;
 }
 
 .formulario {

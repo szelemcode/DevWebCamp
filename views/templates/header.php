@@ -23,7 +23,9 @@
 <div class="barra">
     <div class="barra__contenido">
         <a class="barro__logo" href="/">
-            &#60;DevWebCamp />
+            <h2 class="barra__logo">
+                &#60;DevWebCamp />
+            </h2>            
         </a>
         <nav class="navegacion">
             <a href="/devwebcamp" class="navegacion__enlace">Eventos</a>
