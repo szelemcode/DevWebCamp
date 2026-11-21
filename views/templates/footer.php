@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
     <div class="footer__grid">
         <div class="footer__contenido">
             <h3 class="footer__logo">
@@ -32,7 +32,7 @@
                </nav>
         </div>
 
-    <p class=""footer__copyright>
+    <p class="footer__copyright">
         DevWebCamp
         <span class="footer__copyright--regular">
             - Todos los derechos reservados> <?php echo date('Y'); ?>
