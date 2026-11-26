@@ -2,7 +2,11 @@
 <H2 class="auth__heading"><?php echo $titulo; ?></H2>
 <p class="auth__texto">Registrate en DevWebcamp</p>
 
-<form action="" class="formulario">
+<?php 
+    require_once __DIR__ . '/../templates/alertas.php';
+?>
+
+<form action="/registro" class="formulario" method="POST">
     <div class="formulario__campo">
         <label for="nombre" class="formulario__label">Email</label>
         <input
@@ -11,6 +15,7 @@
              placeholder="Tu nombre"
              id="nombre"
              name="nombre"
+             value="<?php echo $usuario->nombre ?? ''; ?>"
              />
     </div>
 
@@ -22,6 +27,7 @@
              placeholder="Tu apellido"
              id="apellido"
              name="apellido"
+             value="<?php echo $usuario->apellido ?? '' ; ?>"
              />
     </div>
 
@@ -33,17 +39,18 @@
              placeholder="Tu email"
              id="email"
              name="email"
+             value="<?php echo $usuario->email ?? ''; ?>"
              />
     </div>
 
     <div class="formulario__campo">
-        <label for="passwrd" class="formulario__label">Password</label>
+        <label for="password" class="formulario__label">Password</label>
         <input
              type="password"
              class="formulario__input"
              placeholder="Tu password"
              id="passwrd"
-             name="passwrd"
+             name="password"
              />
     </div>
 
@@ -58,7 +65,7 @@
              />
     </div>
 
-    <input type="submit" class="formulario__submit" value="Iniciar Sesion">
+    <input type="submit" class="formulario__submit" value="Crear Cuenta">
 
     <div class="acciones">
         <a href="/login" class="acciones__enlace">Ya tienes cuenta ? Inicia Sesion</a>

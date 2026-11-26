@@ -66,6 +66,7 @@ class AuthController {
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $usuario->sincronizar($_POST);
+            //debuguear($usuario);
             
             $alertas = $usuario->validar_cuenta();
 
