@@ -2,7 +2,9 @@
 <H2 class="auth__heading"><?php echo $titulo; ?></H2>
 <p class="auth__texto">Inicia sesion en DevWebcamp</p>
 
-<form action="" class="formulario">
+<?php include_once __DIR__ . '/../templates/alertas.php' ; ?>
+
+<form action="/login" class="formulario" method="POST">
     <div class="formulario__campo">
         <label for="email" class="formulario__label">Email</label>
         <input
@@ -19,8 +21,8 @@
              type="password"
              class="formulario__input"
              placeholder="Tu password"
-             id="passwrd"
-             name="passwrd"
+             id="password"
+             name="password"
              />
     </div>
     <input type="submit" class="formulario__submit" value="Iniciar Sesion">

@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
 
+    &--centrar{
+        justify-content: center; // a lo que tiene display flex lo centro de esta manera
+    }
+
     &__enlace {
         color: v.$negro;
         font-size: 1.4rem;
